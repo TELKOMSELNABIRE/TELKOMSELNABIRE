@@ -22,21 +22,28 @@
     }
 
     /* HEADER */
-    .top-bar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 18px 24px;
-      font-size: 14px;
-      font-weight: 600;
-    }
+    
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 22px;
+}
 
-    .logo {
-      height: 26px;
-      width: auto;
-      object-fit: contain;
-    }
+.logo {
+  height: 32px;
+  max-width: 150px;
+  width: auto;
+  object-fit: contain;
+}
 
+.logo-nabire {
+  max-width: 140px;
+}
+
+.logo-telkomsel {
+  max-width: 150px;
+}
     /* HERO */
     .hero {
       text-align: center;
@@ -196,13 +203,20 @@
 
 <body>
 
-  <!-- HEADER: LOGO DAN NAMA TETAP -->
-  <header class="top-bar">
-    <div>Nabire</div>
-    <img src="TELKOMSELPUTIH.png"
-         class="logo"
-         alt="Logo Telkomsel">
-  </header>
+<!-- HEADER: LOGO KIRI DAN LOGO TELKOMSEL KANAN -->
+<header class="top-bar">
+  <img
+    src="LOGONABIRE.png"
+    class="logo logo-nabire"
+    alt="Logo Nabire"
+  >
+
+  <img
+    src="TELKOMSELPUTIH.png"
+    class="logo logo-telkomsel"
+    alt="Logo Telkomsel"
+  >
+</header>
 
   <!-- HALAMAN UTAMA -->
   <main>
